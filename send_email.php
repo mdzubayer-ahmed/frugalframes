@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $dept = htmlspecialchars(trim($_POST['dept']));
     $message = htmlspecialchars(trim($_POST['message']));
 
-    $to = 'your-email@example.com'; // Replace with your email address
+    $to = 'your-email@gmail.com'; // Replace with your Gmail address
     $subject = 'New Form Submission';
     $body = "Name: $name\nEmail: $email\nDepartment: $dept\nMessage:\n$message";
     $headers = "From: $email\r\n" .
