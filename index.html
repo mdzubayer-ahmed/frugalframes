@@ -93,7 +93,37 @@
 					<section><div class="box">
 							<div class="content">
 								<h2 class="align-center">Get in Touch</h2>
-								<hr><form action="#" method="post">
+								<hr><form action="send_email.php" method="post">
+									<div class="field half first">
+										<label for="name">Name</label>
+										<input name="name" id="name" type="text" placeholder="Name" required>
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input name="email" id="email" type="email" placeholder="Email" required>
+									</div>
+									<div class="field">
+										<label for="dept">Department</label>
+										<div class="select-wrapper">
+											<select name="dept" id="dept" required>
+												<option value="">- Category -</option>
+												<option value="Manufacturing">Manufacturing</option>
+												<option value="Shipping">Shipping</option>
+												<option value="Administration">Administration</option>
+												<option value="Human Resources">Human Resources</option>
+											</select>
+										</div>
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6" placeholder="Message" required></textarea>
+									</div>
+									<ul class="actions align-center">
+									<li><input value="Send Message" class="button special" type="submit"></li>
+									</ul>
+									</form>
+								
+								<!-- <form action="mailto: admin@frugalframeseye.com" method="post">
 									<div class="field half first">
 										<label for="name">Name</label>
 										<input name="name" id="name" type="text" placeholder="Name"></div>
@@ -109,7 +139,7 @@
 										<label for="message">Message</label>
 										<textarea name="message" id="message" rows="6" placeholder="Message"></textarea></div>
 									<ul class="actions align-center"><li><input value="Send Message" class="button special" type="submit"></li>
-									</ul></form>
+									</ul></form> -->
 							</div>
 						</div>
 					</section></div>
